@@ -1,0 +1,88 @@
+<!-- 内容 -->
+<div class="container">
+  <ol class="breadcrumb t-nav hidden-sm hidden-xs">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">工程涂料</a></li>
+    <li class="active">外墙涂装解决方案</li>
+  </ol>
+  <div class="title">
+    <h2 class="zs">外墙涂装解决方案</h2>
+    <p>三棵树建筑涂料拥有专业产品体系和特色产品，产品线非常丰富包括：金属漆、氟碳漆、弹性涂料、弹性拉毛漆、浮雕漆。</p>
+  </div>
+  <div id="content" class="clearfix product">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g1.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>真石漆系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>天然花岗石外观，非凡气派，花样色丰富；装饰质感强烈，可选颜色多样，饰纹制作丰富；高耐候性，既有疏水性，又有良好透气性；附着力强，表面不起砂...</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g2.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>岩片漆系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>片状叠加的花纹效果使得仿花岗岩效果更加逼真，装饰后大花纹、大点子给人好看、牢固，酷似石材的丰富质感，给人以天然花岗岩般庄重、粗犷、大气的视觉享受。</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g3.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>多彩漆系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>安全环保、经久耐用、高性价比、弥盖裂纹、装饰性强、快捷方便、使用面广。</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g4.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>质感涂料系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>不含石灰和水泥；高耐候，防水、透气性能优异；漆膜坚固而富柔性，能掩盖墙体细微裂缝和抵御一定程度冲击；耐酸雨、耐黄变、抗龟裂...</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g5.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>地坪漆系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>表面平整美观，达镜面效果；耐磨、耐压、耐冲击；耐酸、碱、盐和油的腐蚀。</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="plan-item">
+          <div class="img"><a href=""><img src="/assets/g6.jpg"></a></div>
+          <h4 class="clearfix"><a href=""><span>清净界系列</span></a></h4>
+          <div class="row">
+            <div class="col-sm-8"><p>施工简单方便，能调整粗糙程度不一样的表面、具有遮盖墙体表面缺陷的功能。</p></div>
+            <div class="col-sm-4">
+              <a class="more" href="">更多产品信息<span>+</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

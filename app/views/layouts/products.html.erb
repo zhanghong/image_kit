@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三棵树涂料官方网站－三棵树涂料股份有限公司－三棵树下健康人家－3Trees</title>
+    <%= stylesheet_link_tag "bootstrap.min", "style", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "jquery-1.11.1.min", "modernizr-2.8.3.min", "data-turbolinks-track" => true %>
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag "html5shiv.min", "respond.min", "data-turbolinks-track" => true %>
+    <![endif]-->
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="color">
+  <div class="wrap">
+    <div id="container">
+      <!-- 顶部导航 -->
+      <div id="header">
+        <div id="nav-wrap">
+          <div class="container">
+            <div class="row">
+              <div id="nav-header" class="clearfix">
+                <div class="logo"><img src="/assets/logo.png"></div>
+                <div class="nav-list clearfix">
+                  <ul class="hidden-sm hidden-xs">
+                    <li><a href="">首页</a></li>
+                    <li class="active" ><a href="">关于三棵树</a></li>
+                    <li><a href="">企业文化</a></li>
+                    <li><a href="">品牌建设</a></li>
+                    <li><a href="">健康标准</a></li>
+                    <li><a href="">人才招聘</a></li>
+                    <li><a href="">三棵树商城</a></li>
+                  </ul>
+                  <div class="top-link">
+                    <a class="searchBtn"><img src="/assets/search.png"></a>
+                    <a href=""><img src="/assets/tmll.png"></a>
+                    <a href=""><img src="/assets/english.png"></a>
+                    <a class="wap-menu visible-xs"><img src="/assets/menu.png"></a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 搜索下拉 -->
+        <div id="search-con" >
+          <div class="form">
+            <input class="inp" type="text" >
+            <input class="btn btn-default" type="button" value="搜索产品">
+          </div>
+          <p class="keywords">关键字：<a href="">环保</a><a href="">易清洗</a><a href="">无甲醛</a><a href="">卧室</a><a href="">儿童房</a><a href="">外墙</a></p>
+        </div>
+        <!-- 分类导航 -->
+        <div id="nav-cont" class="ok">
+          
+
+          <div class="container">
+            <div class="row">
+              <ul class="nav-classify clearfix">
+                  <li class="">
+                  <a href="/Product/index/category/zhuangshi.html" onclick="mzBtnTrack('导航-装饰涂料-首页',1)">
+                    <i class="c1"></i>装饰涂料
+                  </a>
+                  <div class="classify-con zhuangshi" style="display: none;">
+                    <div class="classify-on s1"></div>
+                    <div class="screen">
+                      <div class="screen-list">
+                        <div class="screen-slide on">
+                            <dl>
+                              <dt>
+                                <a class="product-sub-nav" href="/Product/series/category/zhuangshi_series.html" onclick="mzBtnTrack('导航-装饰涂料-产品系列',1)">
+                                  产品系列                          </a>
+                              </dt>
+                                                        <dd>
+                                  <a href="/Product/lists/category/neiqiangrujiao.html" onclick="mzBtnTrack('导航-装饰涂料-内墙涂料',1)">
+                                    内墙涂料                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/muqiqi.html" onclick="mzBtnTrack('导航-装饰涂料-木器漆',1)">
+                                    木器漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/yishuqi.html" onclick="mzBtnTrack('导航-装饰涂料-艺术漆',1)">
+                                    艺术漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/waiqiangqi.html" onclick="mzBtnTrack('导航-装饰涂料-外墙涂料',1)">
+                                    外墙涂料                            </a>
+                                </dd>
+                                                    </dl>
+                                              <dl>
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/zhuangshi_integration.html" onclick="mzBtnTrack('导航-装饰涂料-马上住服务',1)">
+                                马上住服务
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl>
+                            <dt>
+                              <span style="font-size:16px;color:#069538;margin-bottom:2px;line-height:28px;">加盟合作</span>
+                            </dt>
+                            <dd>
+                              <a class="product-sub-nav" href="/Product/zhuangshi_joins.html" onclick="mzBtnTrack('导航-装饰涂料-装修漆加盟合作',1)">
+                                装修漆加盟合作
+                              </a>
+                            </dd>
+                            <dd>
+                              <a class="product-sub-nav" href="/Product/zhuangshi_area_joins.html" onclick="mzBtnTrack('导航-装饰涂料-县镇工程加盟合作',1)">
+                                县镇工程加盟合作
+                              </a>
+                            </dd>
+                          </dl>
+                        </div>
+                                                          </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a href="/Product/index/category/gongcheng.html" onclick="mzBtnTrack('导航-工程涂料-首页',1)">
+                    <i class="c2"></i>工程涂料
+                  </a>
+                  <div class="classify-con gongcheng" style="left:25px;">
+                    <div class="classify-on s2"></div>
+                    <div class="screen">
+                      <div class="screen-list gongcheng">
+                        <div class="screen-slide on">
+                                                                                          <dl class="gongcheng">
+                              <dt>
+                                <a class="product-sub-nav" href="/Product/series/category/gongcheng_series.html" onclick="mzBtnTrack('导航-工程涂料-产品系列',1)">
+                                  产品系列                          </a>
+                              </dt>
+                                                        <dd>
+                                  <a href="/Product/lists/category/fangshituliao.html" onclick="mzBtnTrack('导航-工程涂料-仿石涂料',1)">
+                                    仿石涂料                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/wangqiangtanxing.html" onclick="mzBtnTrack('导航-工程涂料-外墙弹性涂料',1)">
+                                    外墙弹性涂料                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/waiqiangrujiao.html" onclick="mzBtnTrack('导航-工程涂料-外墙乳胶漆',1)">
+                                    外墙乳胶漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/neiqiangrujiaoqi.html" onclick="mzBtnTrack('导航-工程涂料-内墙乳胶漆',1)">
+                                    内墙乳胶漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/gongchengfuliao.html" onclick="mzBtnTrack('导航-工程涂料-辅料',1)">
+                                    辅料                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/dipingqi.html" onclick="mzBtnTrack('导航-工程涂料-地坪漆系列',1)">
+                                    地坪漆系列                           </a>
+                                </dd>
+                                                    </dl>
+                                              <dl class="gongcheng">
+                            <dt>
+                              <span style="font-size:16px;color:#069538;margin-bottom:2px;line-height:28px;">百强地产</span>
+                            </dt>
+                            <dd>
+                              <a href="/Product/gongcheng_partners.html" onclick="mzBtnTrack('导航-工程涂料-战略合作伙伴',1)">
+                                战略合作伙伴
+                              </a>
+                            </dd>
+                            <dd>
+                              <a href="/Article/index/category/hezuoxinwen.html" onclick="mzBtnTrack('导航-工程涂料-合作新闻',1)">
+                                合作新闻
+                              </a>
+                            </dd>
+                          </dl>
+                          <dl class="gongcheng">
+                            <dt>
+                              <a class="product-sub-nav" href="/Picture/index/category/jingpingongcheng.html" onclick="mzBtnTrack('导航-工程涂料-精品工程',1)">
+                                精品工程
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="gongcheng">
+                            <dt>
+                              <a class="product-sub-nav" href="/Experience/index.html" onclick="mzBtnTrack('导航-工程涂料-效果体验',1)">
+                                效果体验
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="gongcheng">
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/gongcheng_services.html" onclick="mzBtnTrack('导航-工程涂料-361服务',1)">
+                                361服务
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="no-border gongcheng">
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/gongcheng_joins.html" onclick="mzBtnTrack('导航-工程涂料-加盟合作',1)">
+                                加盟合作
+                              </a>
+                            </dt>
+                          </dl>
+                        </div>  
+                                                          </div>  
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a href="/Product/index/category/jiaju.html" onclick="mzBtnTrack('导航-家具涂料-首页',1)">
+                    <i class="c3"></i>家具涂料
+                  </a>
+                  <div class="classify-con jiaju" style="left:25%;">
+                    <div class="classify-on s3"></div>
+                    <div class="screen">
+                      <div class="screen-list jiaju">
+                        <div class="screen-slide on">
+                                                                                          <dl class="jiaju">
+                              <dt>
+                                <a class="product-sub-nav" href="/Product/series/category/jiaju_series.html" onclick="mzBtnTrack('导航-家具涂料-产品系列',1)">
+                                  产品系列                          </a>
+                              </dt>
+                                                        <dd>
+                                  <a href="/Product/lists/category/shuixinhuanbao.html" onclick="mzBtnTrack('导航-家具涂料-水性系列',1)">
+                                    水性系列                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/jingweixilie.html" onclick="mzBtnTrack('导航-家具涂料-净味系列',1)">
+                                    净味系列                            </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/uv.html" onclick="mzBtnTrack('导航-家具涂料-UV漆系列',1)">
+                                    UV漆系列                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/pu.html" onclick="mzBtnTrack('导航-家具涂料-PU漆系列',1)">
+                                    PU漆系列                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/nc.html" onclick="mzBtnTrack('导航-家具涂料-NC漆系列',1)">
+                                    NC漆系列                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/pe.html" onclick="mzBtnTrack('导航-家具涂料-PE漆系列',1)">
+                                    PE漆系列                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/jiajufuliao.html" onclick="mzBtnTrack('导航-家具涂料-辅料',1)">
+                                    辅料                            </a>
+                                </dd>
+                                                    </dl>
+                                                                                                              <dl class="jiaju">
+                              <dt>
+                                <a class="product-sub-nav" href="/Product/series/category/jiajugongyi.html" onclick="mzBtnTrack('导航-家具涂料-工艺解决方案',1)">
+                                  工艺解决方案                          </a>
+                              </dt>
+                                                        <dd>
+                                  <a href="/Product/lists/category/jiudiantaofang.html" onclick="mzBtnTrack('导航-家具涂料-酒店套房专用漆',1)">
+                                    酒店套房专用漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/mumen.html" onclick="mzBtnTrack('导航-家具涂料-木门专用漆',1)">
+                                    木门专用漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/bangongjiaju.html" onclick="mzBtnTrack('导航-家具涂料-办公家具专用漆',1)">
+                                    办公家具专用漆                           </a>
+                                </dd>
+                                                        <dd>
+                                  <a href="/Product/lists/category/chuguizhanshi.html" onclick="mzBtnTrack('导航-家具涂料-橱柜展柜专用漆',1)">
+                                    橱柜展柜专用漆                           </a>
+                                </dd>
+                                                    </dl>
+                                              <dl class="jiaju">
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/jiaju_partners.html" onclick="mzBtnTrack('导航-家具涂料-战略合作伙伴',1)">
+                                战略合作伙伴
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="jiaju">
+                            <dt>
+                              <a class="product-sub-nav" href="/Picture/index/category/yangbanzhanshi.html" onclick="mzBtnTrack('导航-家具涂料-样板展示',1)">
+                                样板展示
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="jiaju">
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/jiaju_services.html" onclick="mzBtnTrack('导航-家具涂料-361服务体系',1)">
+                                361服务体系
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl class="no-border jiaju">
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/jiaju_joins.html" onclick="mzBtnTrack('导航-家具涂料-加盟合作',1)">
+                                加盟合作
+                              </a>
+                            </dt>
+                          </dl>
+                        </div>
+                                                          </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <a href="/Product/index/category/fuliao.html" onclick="mzBtnTrack('导航-辅料-首页',1)">
+                    <i class="c4"></i>辅料
+                  </a>
+                  <div class="classify-con fuliao" style="left:750px;">
+                    <div class="classify-on s4"></div>
+                    <div class="screen">
+                      <div class="screen-list">
+                        <div class="screen-slide on">
+                                                                                          <dl>
+                              <dt>
+                                <a class="product-sub-nav" href="/Product/series/category/fuliao_series.html" onclick="mzBtnTrack('导航-辅料-产品系列',1)">
+                                  产品系列                          </a>
+                              </dt>
+                                                                                    <dd>
+                                    <a href="/Product/lists/category/jiaonianji.html" onclick="mzBtnTrack('导航-辅料-胶粘剂',1)">
+                                      胶粘剂                             </a>
+                                  </dd>
+                                                                                                              <dd>
+                                    <a href="/Product/lists/category/sub_fuliao.html" onclick="mzBtnTrack('导航-辅料-辅料',1)">
+                                      辅料                              </a>
+                                  </dd>
+                                                                                                              <dd>
+                                    <a href="/Product/lists/category/fangshui.html" onclick="mzBtnTrack('导航-辅料-防水',1)">
+                                      防水                              </a>
+                                  </dd>
+                                                                                                              <dd>
+                                    <a href="/Product/lists/category/nizifen.html" onclick="mzBtnTrack('导航-辅料-腻子',1)">
+                                      腻子                              </a>
+                                  </dd>
+                                                                                                                                </dl>
+                                              <dl>
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/lists/category/fuliaogongju.html" onclick="mzBtnTrack('导航-辅料-工具系列',1)">
+                                工具系列
+                              </a>
+                            </dt>
+                          </dl>
+                          <dl>
+                            <dt>
+                              <a class="product-sub-nav" href="/Product/fuliao_joins.html" onclick="mzBtnTrack('导航-辅料-加盟合作',1)">
+                                加盟合作
+                              </a>
+                            </dt>
+                          </dl>
+                        </div>
+                                                          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <!-- wap导航 -->
+      <div id="slide-nav">
+        <a class="menu-close">
+          <img src="/assets/menu_close.png">
+        </a>
+        <ul class="nav-link">
+          <li><a href="">首页</a></li>
+          <li>
+            <a>关于三棵树<i></i></a>
+            <dl>
+              <dd>企业介绍</dd>
+              <dd>企业动态</dd>
+              <dd>企业荣誉</dd>
+              <dd>总裁致辞</dd>
+              <dd>企业影音</dd>
+              <dd>企业图片</dd>
+            </dl>
+          </li>
+          <li>
+            <a>企业文化<i></i></a>
+            <dl>
+              <dd>文化体系</dd>
+              <dd>文化活动</dd>
+              <dd>文化传播</dd>
+              <dd>精英俱乐部</dd>
+            </dl>
+          </li>
+          <li>
+            <a>品牌建设<i></i></a>
+            <dl>
+              <dd>品牌故事</dd>
+              <dd>品牌定位</dd>
+              <dd>品牌传播</dd>
+              <dd>品牌承诺</dd>
+              <dd>媒体报道</dd>
+            </dl>
+          </li>
+          <li>
+            <a>健康标准<i></i></a>
+            <dl>
+              <dd>我们的标准</dd>
+              <dd>常见问题</dd>
+            </dl>
+          </li>
+          <li>
+            <a>人才招聘<i></i></a>
+            <dl>
+              <dd>社会招聘</dd>
+              <dd>校园招聘</dd>
+              <dd>企业荣誉</dd>
+              <dd>职业成长</dd>
+              <dd>人在树下</dd>
+              <dd>商学院</dd>
+            </dl>
+          </li>
+          <li>
+            <a>三棵树商城<i></i></a>
+            <dl>
+              <dd>产品系列</dd>
+              <dd>购物车</dd>
+            </dl>
+          </li>
+        </ul>
+        <ul class="nav-list">
+          <li class="l1"><a href="">装饰涂料<img src="/assets/arrow.png"></a></li>
+          <li class="l2"><a href="">工程涂料<img src="/assets/arrow.png"></a></li>
+          <li class="l3"><a href="">家具涂料<img src="/assets/arrow.png"></a></li>
+          <li class="l4"><a href="">辅料<img src="/assets/arrow.png"></a><li>
+        </ul>
+      </div>
+      <!-- 内容 -->
+      <%= yield %>
+      <!-- footer底部 -->
+      <div class="container">
+        <!-- 返回顶部 -->
+        <div id="go-top" class="visible-xs">
+          <img src="/assets/top.png">返回顶部
+        </div>
+        <div id="footer" class="clearfix">
+          <div class="footer-qrcode">
+            <img src="/assets/qr_wb.jpg">
+            <img src="/assets/qr_wx.jpg">
+          </div>
+          <div class="footer-left">
+            <div class="footer-link  hidden-xs">
+              <a href="">网站地图</a><span>/</span>
+              <a href="">联系我们</a><span>/</span>
+              <a href="">法律声明</a><span>/</span>
+              <a href="">人才招聘</a><span>/</span>
+              <a href="">企业影音</a><span>/</span>
+              <a href="">咨询意见</a>
+            </div>
+            <div class="footer-hotline">
+              服务热线：<span><a href="tel:400-8823777">400-8823777</a>／<a href="tel:800-8584333">800-8584333</a></span>
+            </div>
+            <div class="footer-copyRight hidden-xs">
+              COPYRIGHT@2009 SKSHU.com.cn ALL RIGHT RESERVED 闽ICP备05007461号
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右侧快捷按钮 -->
+      <div id="shortcutBtn" class="hidden-sm hidden-xs"  data-offset-top="600">
+        <div class="menu">
+          <a class="menu-search"><i></i></a>
+          <a class="menu-shua"><i></i></a>
+        </div>
+        <div class="main">
+          <div class="con c1">
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3>关键字搜索</h3>
+            <div class="form clearfix">
+              <input type="text" class="search-input"><input class="btn btn-default" type="button" value="搜  索">
+              <div class="choose" data="cp"><span class="cp">产品</span><i></i><span class="xw">新闻</span></div>
+            </div>
+            <p class="keyword">热门关键字：<a href="">三棵树</a><a href="">鲜呼吸</a><a href="">太空漆</a><a href="">环保</a><a href="">卧室</a></p>
+            <h4><span>明星产品推荐</span></h4>
+            <ul>
+              <li><img src="/assets/cp1.jpg"><p class="text-center">鲜呼吸荷易净<br>净味全效墙面漆</p></li>
+              <li class="no-border"><img src="/assets/cp1.jpg"><p class="text-center">太空漆墙面漆</p></li>
+            </ul>
+            <div class="text-center">
+              <a class="more">查看更多产品</a>
+            </div>
+          </div>
+          <div class="con c2">
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3>优质服务</h3>
+            <p class="p1">更多优质服务，请直接拨打客服热线！</p>
+            <p class="hotline">客服热线：<span>400-8823777／800-8584333</span></p>
+            <ul>
+              <li class="l1"><a href=""><i></i>经销商查询</a></li>
+              <li class="l2"><a href=""><i></i>常见问题</a></li>
+              <li class="l3"><a href=""><i></i>真伪鉴别</a></li>
+              <li class="l4"><a href=""><i></i>涂装服务</a></li>
+              <li class="l5"><a href=""><i></i>效果体验</a></li>
+              <li class="l6"><a href=""><i></i>漆量计算</a></li>
+              <li class="l7"><a href=""><i></i>师傅查找</a></li>
+              <li class="l8"><a href=""><i></i>智能配色</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 遮罩 -->
+      <div class="pop-bg"></div>
+    </div>
+  </div>
+  <%= javascript_include_tag "bootstrap.min", "masonry.pkgd.min", "imagesloaded.pkgd.min", "main", "data-turbolinks-track" => true %>
+  </body>
+</html>

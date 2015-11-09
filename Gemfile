@@ -23,8 +23,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem "imgkit"
-gem "wkhtmltoimage-binary"
+# gem "postrank-uri"
+# gem "imgkit"
+# gem "wkhtmltoimage-binary"
+# gem "phantomjs"
+gem "watir-webdriver"
+# gem "screencap"
+
+gem "spreadsheet", "1.0.8"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
