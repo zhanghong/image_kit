@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :products do
     collection do
       get "series"
+      post "save_yml"
     end
   end
 

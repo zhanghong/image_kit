@@ -1,36 +1,73 @@
 <!-- 内容 -->
-<div id="second-banner" data-big-img="/assets/banner3.jpg" data-small-img="/assets/banner3_small.jpg"></div>
+<div id="second-banner" data-cname="m1" data-big-img="/assets/banner3.jpg" data-small-img="/assets/banner3_small.jpg"></div>
 <div class="container in-con gongcheng">
   <div class="in-con-main clearfix">
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d6.jpg"><div class="icon"><img src="/assets/icon04.png"></div></a></div>
-      <h4>产品系列</h4>
-      <p>完善强大的六大服务体系</p>
+      <div class="img"><a href=""><img class="full" data-cname="m2" src="/assets/d6.jpg"><div class="icon"><img src="/assets/icon04.png"></div></a></div>
+      <h4 data-cname="m8" data-ctype="text">产品系列</h4>
+      <p data-cname="m9" data-ctype="text">完善强大的六大服务体系</p>
     </div>
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d7.jpg"><div class="icon"><img src="/assets/icon07.png"></div></a></div>
-      <h4>战略合作伙伴</h4>
-      <p>联手万达、万科等百强地产</p>
+      <div class="img"><a href=""><img class="full" data-cname="m3" src="/assets/d7.jpg"><div class="icon"><img src="/assets/icon07.png"></div></a></div>
+      <h4 data-cname="10" data-ctype="text">战略合作伙伴</h4>
+      <p id="test-item"  data-cname="11" data-ctype="text">联手万达、万科等百强地产</p>
     </div>
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d8.jpg"><div class="icon"><img src="/assets/icon08.png"></div></a></div>
-      <h4>精品工程</h4>
-      <p>激情跨越，创造一个又一个辉煌</p>
+      <div class="img"><a href=""><img class="full" data-cname="m4" src="/assets/d8.jpg"><div class="icon"><img src="/assets/icon08.png"></div></a></div>
+      <h4 data-cname="m12" data-ctype="text">精品工程</h4>
+      <p data-cname="m13" data-ctype="text">激情跨越，创造一个又一个辉煌</p>
     </div>
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d9.jpg"><div class="icon"><img src="/assets/icon09.png"></div></a></div>
-      <h4>效果体验</h4>
-      <p>线上最真实的色彩体验</p>
+      <div class="img"><a href=""><img class="full" data-cname="m5" src="/assets/d9.jpg"><div class="icon"><img src="/assets/icon09.png"></div></a></div>
+      <h4 data-cname="m14" data-ctype="text">效果体验</h4>
+      <p data-cname="m15" data-ctype="text">线上最真实的色彩体验</p>
     </div>
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d10.jpg"><div class="icon"><img src="/assets/icon10.png"></div></a></div>
-      <h4>感动服务</h4>
-      <p>三棵树工程361服务体系</p>
+      <div class="img"><a href=""><img class="full" data-cname="m6" src="/assets/d10.jpg"><div class="icon"><img src="/assets/icon10.png"></div></a></div>
+      <h4 data-cname="m16" data-ctype="text">感动服务</h4>
+      <p data-cname="m17" data-ctype="text">三棵树工程361服务体系</p>
     </div>
     <div class="col-sm-4">
-      <div class="img"><a href=""><img class="full" src="/assets/d3.jpg"><div class="icon"><img src="/assets/icon06.png"></div></a></div>
-      <h4>加盟合作</h4>
-      <p>大牌崛起，热销中国</p>
+      <div class="img"><a href=""><img class="full" data-cname="m7" src="/assets/d3.jpg"><div class="icon"><img src="/assets/icon06.png"></div></a></div>
+      <h4 data-cname="m18" data-ctype="text">加盟合作</h4>
+      <p data-cname="m19" data-ctype="text">大牌崛起，热销中国</p>
     </div>
   </div>
 </div>
+<%= content_for :after_main_js do -%>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(window).load(function() {
+        var cut_lists = [];
+        $("[data-cname]").each(function(){
+          $item = $(this);
+          
+          item_offset = $item.offset();
+          cut_item = {
+                        "name": $item.data("cname"),
+                        "mate_type": $item.data("ctype"),
+                        "top": item_offset["top"], 
+                        "left": item_offset["left"], 
+                        "width": $item.width(),
+                        "height": $item.height()
+                      };
+          if(cut_item["mate_type"] == undefined){
+            cut_item["mate_type"] = "image";
+          }
+          cut_lists.push(cut_item);
+        });
+
+        $.ajax({
+          url: "/products/save_yml",
+          method: "POST",
+          data: {"lists": cut_lists, "page_id": "product_index"},
+          dataType:"json",
+          success:function(data){
+            console.log("success..........")
+          }
+        });
+        console.log(cut_lists);
+      });
+    });
+  </script>
+<%- end -%>

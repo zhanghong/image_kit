@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>三棵树涂料官方网站－三棵树涂料股份有限公司－三棵树下健康人家－3Trees</title>
     <%= stylesheet_link_tag "bootstrap.min", "style", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "jquery-1.11.1.min", "modernizr-2.8.3.min", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "jquery-1.11.3.min", "modernizr-2.8.3.min", "data-turbolinks-track" => true %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag "html5shiv.min", "respond.min", "data-turbolinks-track" => true %>
     <![endif]-->
@@ -517,4 +517,5 @@
   </div>
   <%= javascript_include_tag "bootstrap.min", "masonry.pkgd.min", "imagesloaded.pkgd.min", "main", "data-turbolinks-track" => true %>
   </body>
+  <%= yield :after_main_js %>
 </html>
