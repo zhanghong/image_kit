@@ -60,7 +60,7 @@
         $.ajax({
           url: "/products/save_yml",
           method: "POST",
-          data: {"lists": cut_lists, "page_id": "product_index"},
+          data: {"lists": cut_lists, "page_name": "product_index"},
           dataType:"json",
           success:function(data){
             console.log("success..........")

@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     collection do
       get "series"
       post "save_yml"
+      get "save_yml"
     end
   end
 

@@ -31,31 +31,44 @@ class ProductsController < ApplicationController
 
   def save_yml
     # YAML::ENGINE.yamler = 'psych'
-    arr = []
-    lists = params[:lists]
-    page_id = params[:page_id]
-    if lists.present? && page_id.present?
-      keys = %w(name mate_type top left width height)
-      lists.each do |key, list_item|
-        val = {}
-        list_item.each do |k, v|
-          val[k] =  case k
-                    when "top", "left"
-                      v.to_f.floor
-                    when "width", "height"
-                      v.to_f.ceil
-                    else
-                      v
-                    end
+    # puts "+++++++++ " * 8
+    # puts request.user_agent
+    # puts "+++++++++ " * 8
+    if request.user_agent && request.user_agent.include?("PhantomJS")
+      arr = []
+      lists = params[:lists]
+      page_name = params["name"]
+
+      if lists.blank?
+        result = {status: "failed", msg: "lists is blank"}
+      elsif page_name.blank?
+        result = {status: "failed", msg: "page name is blank"}
+      else
+        keys = %w(mate_type top left width height attr_name)
+        lists.each do |key, list_item|
+          val = {}
+          list_item.each do |k, v|
+            val[k] =  case k
+                      when "top", "left"
+                        v.to_f.floor
+                      when "width", "height"
+                        v.to_f.ceil
+                      else
+                        v
+                      end
+          end
+          arr << val.to_hash
         end
-        arr << val.to_hash
+        
+        time_str = Time.now.to_i.to_s
+        # html_dir = FileUtils.mkdir_p("/Users/zhanghong/php_workspace/skshu_site/Pages/html/#{page_name}")
+        html_dir = FileUtils.mkdir_p("/Users/zhanghong/workspace/image_kit/public/pages/html/#{page_name}")
+        yml_path = File.join(html_dir, "config.yml")
+        File.open(yml_path, 'w') {|f| f.write arr.to_yaml}
+        result = {status: "successed", msg: "success"}
       end
-      
-      yml_path = File.join(Rails.root, "public/pages/#{page_id}.yml")
-      File.open(yml_path, 'w') {|f| f.write arr.to_yaml }
-      result = {status: "successed", msg: "success"}
     else
-      result = {status: "failed", msg: "value is blank"}
+      result = {status: "failed", msg: "is not found"}
     end
     
     render :json => result

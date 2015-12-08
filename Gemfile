@@ -31,9 +31,15 @@ gem "mini_magick"
 # gem "imgkit"
 # gem "wkhtmltoimage-binary"
 # gem "phantomjs"
+gem 'watir'
 gem "watir-webdriver"
-# gem "screencap"
-
+gem "screencap"
+gem "rmagick"
+# gem "rtesseract"
+# gem 'httparty'
+gem 'nokogiri'
+require 'open-uri'
+gem "baidu_ocr"
 gem "spreadsheet", "1.0.8"
 
 # Use ActiveModel has_secure_password

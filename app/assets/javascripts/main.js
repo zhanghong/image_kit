@@ -138,10 +138,10 @@ $(function(){
 			var url = $(window).width() >= 768 ? $(this).attr("data-big-img") : $(this).attr("data-small-img");
 			return "url(" + url + ")";
 		});
-		$("#second-banner").css("background-image", function (i, v) {
-			var url = $(window).width() >= 768 ? $(this).attr("data-big-img") : $(this).attr("data-small-img");
-			return "url(" + url + ")";
-		});
+		// $("#second-banner").css("background-image", function (i, v) {
+		// 	var url = $(window).width() >= 768 ? $(this).attr("data-big-img") : $(this).attr("data-small-img");
+		// 	return "url(" + url + ")";
+		// });
 		liHeight();
 		vedioSlideInit();
 		vedioRightSlide();
